@@ -30,6 +30,7 @@ long distance_get(int echo, int trig){
   // calculate the distance
   distance= duration*0.034/2;
   //error handeling for weird overflow errors, I think.
+  //don't read too much into this. It was a weird hack that I would try to avoid, but I wrote this code over the period of an evening while also building the thing.
   if(distance == 4){
     distance = 500;
   }
